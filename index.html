@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insuline Dosage Recommender</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet"  href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header> <div class="logo"> <h2>Insuln Dosage recommender by Kratin</h2> </div>
+    </header>
+
+    <div class="card">
+        <div class="card-body"><h3>Greetings, Sunita Sharma!</h3>
+            <p class="card=text">Welcome to your personalized health portal designed By Kratin Software with your well-being in mind. As we journey together towards a 
+           healthier and happier you, it's essential to recognize the critical role that maintaining an optimal blood sugar level plays in your overall health.
+                 Keeping your blood sugar within a healthy range is crucial for managing energy levels, preventing complications, and enhancing your quality of life.
+                  This system has been meticulously crafted based on your unique insulin sensitivity, derived from your past data. By tailoring recommendations
+                   specifically to your needs, we aim to support you in achieving and sustaining optimal blood sugar levels consistently. Throughout this journey,
+        
+                we'll assume a relatively consistent glycemic load, ensuring that our recommendations align closely with your individual requirements.</p>
+        <p>Here is your personalized Insuline Dosage Recommender. Please Carefully Enter your Desired Lower and Upper limit of Blood Sugar level and your current blood sugar level</p>
+            </div>
+    </div>
+    <div class="form-group" style="text-align: center; padding: 50px"><h5>Enter all Data Carefully to get Recommendation</h5>
+    <div class="input-container">
+       
+        <label for="lower-limit">Enter The Lower limit(mg/dL):</label>
+        <input type="number" id="lower-limit" min="0" required> <br><br>
+        <label for="uppper-limit">Enter The Upper limit(mg/dL):</label>
+        <input type="number" id="upper-limit" min="0" required> <br> <br>
+        <label for="blood-glucose">Blood Glucose Level (mg/dL):</label>
+        <input type="number" id="blood-glucose" min="0" required> <br> <br>
+        <button onclick="recommendInsulin() " type="button" class="btn btn-info">Get Recommendation</button>
+        <div id="recommendation" ></div>
+    </div>
+    </div>
+    
+<footer class="footerContainer"> 
+    <div class="socialIcons">
+        <a href="https://www.linkedin.com/in/achattapadhyay" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/arghya984" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:arghyachatterjee984@gmail.com?subject=Subject%20Here&body=Body%20Here" target="_blank"><i class="fa fa-envelope"></i></a>
+    </div>
+    <div class="footerBottom">
+        <p style="color: white;">Copyright &copy;2024; Designed by <span classs="designer">Arghya Chattapadhyay</span> as an assignment given by Kratin Software</p>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
